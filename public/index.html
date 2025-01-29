@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Quote Generator</title>
+  
+  <!-- Firebase 8.x CDN -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Random Quote Generator</h1>
+    <div class="quote-container">
+      <p id="quote">Loading...</p>
+      <p id="author"></p>
+    </div>
+    <button id="new-quote">Get a New Quote</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

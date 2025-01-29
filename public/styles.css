@@ -1,0 +1,153 @@
+* {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box; /* Ensure padding and borders don't affect the element's size */
+}
+
+body {
+    background: linear-gradient(135deg, #7f59ae, #bfcde0);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container {
+    max-width: 500px; /* Set a max width for larger screens */
+    background: linear-gradient(45deg, #5d4daf, #8752d1);
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner {
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+#new-quote {
+    background-color: #28223b;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#new-quote:hover {
+    background-color: #2d2d5b;
+    transform: scale(1.05);
+}
+
+#quote-box {
+    background: linear-gradient(135deg, #6b70a2, #bfcde0);
+    color: #333;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+}
+
+#quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    min-height: 50px;
+}
+
+#author {
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    #quote-box {
+        width: 90%;
+        padding: 25px;
+    }
+
+    #quote {
+        font-size: 1.25rem;
+    }
+
+    #author {
+        font-size: 1.1rem;
+    }
+
+    .quote-container {
+        padding: 15px;
+    }
+
+    #new-quote {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #quote-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #quote {
+        font-size: 1rem;
+    }
+
+    #author {
+        font-size: 1rem;
+    }
+
+    .quote-container {
+        padding: 10px;
+    }
+
+    #new-quote {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .spinner {
+        width: 25px;
+        height: 25px;
+    }
+}

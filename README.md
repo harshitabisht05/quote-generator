@@ -1,1 +1,2 @@
-This is Quote Generator
+This is Quote Generator. 
+Which randomly generators new quotes.

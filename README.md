@@ -58,6 +58,6 @@ npx live-server public/
 ```
 
 ## 🙋‍♀️ Author
-👩‍💻 [Harshita Bisht](www.linkedin.com/in/harshitabisht0511)
+👩‍💻 Harshita Bisht
 
 Feel free to ⭐ the repo if you like it!
